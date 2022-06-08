@@ -1,0 +1,48 @@
+<template>
+ <div id="nav">
+    <ul>
+       <li>
+         <router-link to="/">Home</router-link>
+       </li>
+       <li>
+         <router-link to="/join">Join</router-link>
+       </li>
+       <li>
+         <router-link to="/login">LogIn</router-link>
+       </li>
+       <li>
+         <router-link to="/about">About</router-link>
+       </li>
+       <router-view/>
+    </ul>
+ </div>
+</template>
+
+<script>
+//import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+
+  }
+}
+</script>
+
+<style>
+ul{
+  list-style: none;
+}
+li{
+  display: inline-block;
+  
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
