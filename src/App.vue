@@ -1,4 +1,5 @@
 <template>
+<img class="backimg" src="" alt="back"/>
 <header class="headimg" ><Header/></header>
     <div class="nav">
       <ul class="list">
@@ -39,6 +40,7 @@ export default {
 </script>
 
 <style>
+
 .headimg{
   display: block;
   margin: 0 auto;
@@ -92,4 +94,39 @@ li{
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.kenburns-top {
+	-webkit-animation: kenburns-top 5s ease-out both;
+	animation: kenburns-top 5s ease-out both;
+}
+
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
 </style>
