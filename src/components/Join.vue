@@ -1,6 +1,7 @@
 <template>
   <h1>{{ title }}</h1>
-  <br /><br /><br />
+  <br><br><br>
+ 
   <form action="/main" ref="frm" id="frm">
     <fieldset>
       <legend>회원 가입</legend>
@@ -60,15 +61,89 @@
         />
         <input type="hidden" name="mobile" ref="mobile" />
       </div>
-      <div>
-        <label class="title"></label>
-        <button ref="btnJoin" @click.prevent="join" class="btn-margin">
+      <div class="btn">
+        <button ref="btnJoin" class="btnJoin" @click.prevent="join" >
           가입
         </button>
-        <button ref="btnCancel" @click.prevent="cancel">취소</button>
+        <button ref="btnCancel" class="btncancel" @click.prevent="cancel">취소</button>
       </div>
     </fieldset>
   </form>
+  <br><br><br><br>
+
+
+<!-- <form>
+  <fieldset>
+    <legend>회원가입</legend>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+   
+    <fieldset class="form-group">
+      <legend class="mt-4">Radio buttons</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+          Option one is this and that—be sure to include why it's great
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+          Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+          Option three is disabled
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="form-group">
+      <legend class="mt-4">Checkboxes</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+        <label class="form-check-label" for="flexCheckChecked">
+          Checked checkbox
+        </label>
+      </div>
+    </fieldset>
+   
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset><br><br><br><br>
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
 </template>
 
 <script>
@@ -158,26 +233,49 @@ export default {
 
 <style>
 #frm {
-  width: 500px;
+  width: 800px;
   margin: 0 auto;
+
 }
 .title {
   display: inline-block;
   width: 120px;
   margin: 5px;
   text-align: left;
+
 }
 fieldset {
   padding: 20px;
+  width: 800px;
 }
+
+legend{
+  color: black;
+}
+
 fieldset div {
   width: 100%;
   text-align: left;
+  color: black;
+  font-weight: bold;
 }
 .m {
   width: 50px;
+  color: black;
 }
-.btn-margin {
-  margin: 20px 10px;
+.btn{
+  display: flex;
+  justify-content: center;
+
 }
+.btnJoin,
+.btncancel {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
+}
+
 </style>

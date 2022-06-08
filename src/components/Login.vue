@@ -101,13 +101,13 @@ export default {
 
       #formJoin input[type="submit"],
       #formJoin input[type="reset"] {
-        width: 60px;
-        height: 30px;
-        margin: 20px 5px;
-        border-style: hidden;
-        border-radius: 10%;
-        background-color: rgb(181, 181, 181);
-        border-color: rgba(0, 0, 0, 0.5);
+        width: 80px;
+        height: 40px;
+        margin: 10px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5%;
+        margin-top :30px;
       }
 
       fieldset {
@@ -122,7 +122,6 @@ export default {
         font-size: 25px;
         font-weight: bold;
       }
-
 
       #pass{
           margin-top:10px;

@@ -11,7 +11,7 @@ export default {
 
 <style>
 #head {
-    width: 100px;
+    width: 150px;
     margin-bottom: 10px;
 }
 </style>
