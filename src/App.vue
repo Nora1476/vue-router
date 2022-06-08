@@ -50,9 +50,8 @@ export default {
 
 .router{
   text-decoration: none;
-  font-weight: bold;
   font-size: 18px;
-  color: rgba(0,0,0,0.8)
+  color: white;
 }
 
 .router:hover{
@@ -60,7 +59,7 @@ export default {
 }
 
 .list {
-  background-color: antiquewhite;
+  background-color: rgb(44, 62, 80);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +81,7 @@ li{
   align-items: center;
   position: fixed;
   bottom: 0;
-  background-color: rgb(196, 196, 196);
+  background-color: rgb(44, 62, 80);
 }
 
 #app {
