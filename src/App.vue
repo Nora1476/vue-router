@@ -1,89 +1,110 @@
 <template>
-<img class="backimg" src="" alt="back"/>
-<header class="headimg" ><Header/></header>
-    <div class="nav">
-      <ul class="list">
-        <li>
-          <router-link class="router" to="/">Home</router-link>
-        </li>
-        <li>
-          <router-link class="router" to="/portfolio">Portfolio</router-link>
-        </li>
-        <li>
-          <router-link class="router" to="/join">Join</router-link>
-        </li>
-        <li>
-          <router-link class="router" to="/login">Login</router-link>
-        </li>
-        <li>
-          <router-link class="router" to="/about">About</router-link>
-        </li>
-        <br><br><br><br>
-      </ul>
-    </div> 
-     <router-view/>
+  <header class="headimg"><Header /></header>
+  <div class="navbox">
+    <ul class="list">
+      <li>
+        <router-link class="router" to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link class="router" to="/main">Main</router-link>
+      </li>
+      <li>
+        <router-link class="router" to="/join">Join</router-link>
+      </li>
+      <li>
+        <router-link class="router" to="/login">Login</router-link>
+      </li>
+      <li>
+        <router-link class="router" to="/about">About</router-link>
+      </li>
+      <br /><br /><br /><br />
+    </ul>
+  </div>
 
- <footer id="foot"><Footer mag="Footer for Your Vue.js"/></footer>
+  <router-view />
+
+  <footer class="footbox"><Footer mag="Footer for Your Vue.js" /></footer>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Header, Footer,
-  }
-}
+    Header,
+    Footer,
+  },
+};
 </script>
 
 <style>
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("./assets/back.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0.6;
+}
 
-.headimg{
+.backimg {
+  z-index: -10;
+}
+
+.headimg {
   display: block;
   margin: 0 auto;
 }
 
-.nav{
-  margin:10px 0;
+.navbox {
+  margin: 10px 0;
 }
 
-.router{
+.router {
   text-decoration: none;
   font-size: 18px;
   color: white;
 }
 
-.router:hover{
+.router:hover {
+  color: white;
   font-size: 20px;
 }
 
 .list {
-  background-color: rgb(44, 62, 80);
+  background-color: rgb(26, 26, 26);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ul{
+ul {
   list-style: none;
 }
-li{
+li {
   display: inline-block;
-  width:150px;
-  
+  width: 150px;
 }
-#foot {
-  width:100%;
+.footbox {
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   bottom: 0;
-  background-color: rgb(44, 62, 80);
+  background-color: rgb(26, 26, 26);
 }
 
 #app {
@@ -91,42 +112,5 @@ li{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
-
-.kenburns-top {
-	-webkit-animation: kenburns-top 5s ease-out both;
-	animation: kenburns-top 5s ease-out both;
-}
-
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-            transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-}
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-            transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-}
-
 </style>

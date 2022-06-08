@@ -1,20 +1,21 @@
 <template>
-<h1>{{title}}</h1>
-<br>
+<h1>{{state.title}}</h1>
 
 
 
 </template>
 
 <script>
-import { ref } from '@vue/reactivity'
+import { reactive} from '@vue/reactivity'
 export default {
     name:'ToHome',
     setup(){
-        const title=ref('Home')
+     const state = reactive({
+        title:'Home'
+      })
     
     return{
-        title,
+        state,
     }
     }
 }

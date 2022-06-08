@@ -1,19 +1,17 @@
 <template>
-  <h4 class="footerline">Vue.js</h4>
+  <h4 class="footer">Vue.js</h4>
 </template>
 
 <script>
-
 export default {
- name:'layoutFooter',
-
-}
+  name: "layoutFooter",
+};
 </script>
 
 <style>
- .footerline{
-   color: white;
-   font-weight: 500;
-   font-size: 20px;
- }
+.footer {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
 </style>
