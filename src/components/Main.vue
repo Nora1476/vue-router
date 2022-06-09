@@ -62,6 +62,9 @@ export default {
 </script>
 
 <style>
+body{
+  overflow: auto;
+}
 .layoutContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -74,8 +77,7 @@ export default {
     "header header"
     "section1 section2"
     "section3 section4";
- 
-      }
+ }
 .header{
   grid-area: header;
    background-color: rgb(222, 222, 222);

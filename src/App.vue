@@ -41,11 +41,13 @@ export default {
 </script>
 
 <style>
+ html,
 body {
-  width: 100%;
-  height: 150%;
+  width: 100wv;
+  height: 100vh;
   position: relative;
 }
+
 body::after {
   width: 100%;
   height: 150%;
@@ -81,7 +83,7 @@ body::after {
 }
 
 .list {
-  background-color: rgb(26, 26, 26);
+  background-color: rgba(26, 26, 26,0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +106,7 @@ li {
   bottom: 0;
   background-color: rgb(26, 26, 26);
   opacity: 0.8;
+  z-index: -1;
 }
 
 
