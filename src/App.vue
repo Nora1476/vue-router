@@ -9,13 +9,13 @@
         <router-link class="router" to="/main">Main</router-link>
       </li>
       <li>
+        <router-link class="router" to="/list">List</router-link>
+      </li>
+      <li>
         <router-link class="router" to="/join">Join</router-link>
       </li>
       <li>
         <router-link class="router" to="/login">Login</router-link>
-      </li>
-      <li>
-        <router-link class="router" to="/about">About</router-link>
       </li>
       <br /><br /><br /><br />
     </ul>
@@ -96,7 +96,7 @@ li {
 }
 .footbox {
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

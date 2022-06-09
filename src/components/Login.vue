@@ -2,14 +2,14 @@
     <h1>{{title}}</h1>
 <br><br><br>
       <div id="content">
-        <form id="frm" ref="frm" action="/">
+        <form id="frm" ref="frm" action="/main">
           <fieldset>
-            <legend>로그인</legend>
+            <legend></legend>
 
             <div id="formJoin">
-              <label for="id">ID : </label>
+              <label for="id">ID </label>
               <input name="id" id="id"  ref="id" type="text" /><br />
-              <label for="pass">PW : </label>
+              <label for="pass">PW </label>
               <input name="pass" id="pass"  ref="pass" type="password" /><br />
 
               <input type="submit" id="btnSend" @click.prevent="login" value="Log In"  />
@@ -97,6 +97,7 @@ export default {
         display: inline-block;
         width: 40px;
         font-weight: bold;
+        font-size:18px;
       }
 
       #formJoin input[type="submit"],
@@ -106,8 +107,10 @@ export default {
         margin: 10px;
         font-weight: bold;
         border: none;
-        border-radius: 5%;
+        border-radius: 10%;
         margin-top :30px;
+        background-color: rgba(26, 26, 26,0.8);
+        color:white;
       }
 
       fieldset {
@@ -115,6 +118,7 @@ export default {
         margin: 0 auto;
         color: rgba(0, 0, 0, 0.5);
         border-radius: 5%;
+        background-color:rgb(248, 248, 248);
       }
 
       legend {

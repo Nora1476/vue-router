@@ -2,20 +2,20 @@
   <h1>{{ title }}</h1>
   <br><br><br>
  
-  <form action="/main" ref="frm" id="frm">
+  <form action="/" ref="frm" id="frm">
     <fieldset>
-      <legend>회원 가입</legend>
+      <legend></legend>
       <div>
         <label for="id" class="title">ID</label>
-        <input type="text" ref="id" id="id" />
+        <input type="text" ref="id" id="id" name="id"/>
       </div>
       <div>
         <label for="name" class="title">Name</label>
-        <input type="text" ref="name" id="name" />
+        <input type="text" ref="name" id="name" name="name"/>
       </div>
       <div>
         <label for="pass" class="title">Password</label>
-        <input type="password" ref="pass" id="pass" />
+        <input type="password" ref="pass" id="pass" name="pass"/>
       </div>
       <div>
         <label for="repass" class="title">Re Password</label>
@@ -70,79 +70,6 @@
     </fieldset>
   </form>
   <br><br><br><br>
-
-
-<!-- <form>
-  <fieldset>
-    <legend>회원가입</legend>
-
-    <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-
-    <div class="form-group">
-      <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-
-    <div class="form-group">
-      <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-   
-    <fieldset class="form-group">
-      <legend class="mt-4">Radio buttons</legend>
-      <div class="form-check">
-        <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-          Option one is this and that—be sure to include why it's great
-        </label>
-      </div>
-      <div class="form-check">
-        <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-          Option two can be something else and selecting it will deselect option one
-        </label>
-      </div>
-      <div class="form-check disabled">
-        <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
-          Option three is disabled
-        </label>
-      </div>
-    </fieldset>
-    <fieldset class="form-group">
-      <legend class="mt-4">Checkboxes</legend>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Default checkbox
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-        <label class="form-check-label" for="flexCheckChecked">
-          Checked checkbox
-        </label>
-      </div>
-    </fieldset>
-   
-    
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </fieldset><br><br><br><br>
-</form> -->
-
-
-
-
-
-
-
-
-
-
 
 </template>
 
@@ -242,7 +169,7 @@ export default {
   width: 120px;
   margin: 5px;
   text-align: left;
-
+  font-size: 15px;
 }
 fieldset {
   padding: 20px;
@@ -259,6 +186,13 @@ fieldset div {
   color: black;
   font-weight: bold;
 }
+input[type="text"],
+input[type="password"]{
+  height: 25px;
+  margin: 4px;
+  border: 1px solid rgba(0,0,0, 0.3);
+  border-radius:5%;
+}
 .m {
   width: 50px;
   color: black;
@@ -271,11 +205,14 @@ fieldset div {
 .btnJoin,
 .btncancel {
   width: 100px;
-  height: 50px;
+  height: 40px;
   margin: 10px;
   font-weight: bold;
   border: none;
-  border-radius: 5%;
+  border-radius: 10%;
+  background-color: rgba(26, 26, 26,0.8);
+  color:white;
+  
 }
 
 </style>

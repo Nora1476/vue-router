@@ -5,6 +5,7 @@
   <div class="header">header</div>
   <div class="section1">
     <div class="member">
+      <h2>list</h2>
         <table class="memberInfo">
           <tr>
             <th>날짜</th>

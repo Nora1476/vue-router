@@ -7,7 +7,7 @@ import { ref } from '@vue/reactivity'
 export default {
     name:'ToAbout',
     setup(){
-        const title=ref('About')
+        const title=ref('List')
     
     return{
         title,
