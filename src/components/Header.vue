@@ -1,5 +1,5 @@
 <template>
-  <img id="head" src="../assets/logo.png" alt="vue image">
+  <img id="head" src="../assets/logo1.png" alt="vue image">
 </template>
 
 <script>
@@ -12,8 +12,9 @@ export default {
 <style>
 
 #head {
-  width: 150px;
-  margin-bottom: 10px;
+  width: 130px;
+  margin: 10px;
+
 	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

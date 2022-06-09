@@ -54,6 +54,7 @@ body::after {
   content: "";
   background-image: url("./assets/back.jpg");
   background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
