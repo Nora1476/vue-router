@@ -2,7 +2,7 @@
   <h1>{{ title }}</h1>
   <br><br><br>
  
-  <form action="/" ref="frm" id="frm">
+  <form action="/" ref="frm" id="frm" method="get">
     <fieldset>
       <legend></legend>
       <div>

@@ -10,6 +10,7 @@ export default {
 
 <style>
 .footer {
+  
   color: white;
   font-weight: 500;
   font-size: 20px;

@@ -11,9 +11,9 @@ const routes = [
   //{path:"/portfolio", component:Home, alias:'/main',redirect:'/main'},
   { path: "/", name: "Home", component: Home },
   { path: "/main", name: "Main", component: Main, alias:'/main' },
-  { path: "/join", name: "Join", component: Join },
-  { path: "/list", name: "List", component: List },
-  { path: "/login", name: "Login", component: Login },
+  { path: "/join", name: "Join", component: Join,  props: true },
+  { path: "/list", name: "List", component: List,  },
+  { path: "/login", name: "Login", component: Login,  props: true },
   { path: "/:catchAll(.*)+", component: NotFound },
 ];
 

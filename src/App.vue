@@ -43,8 +43,8 @@ export default {
 <style>
  html,
 body {
-  width: 100wv;
-  height: 100vh;
+  width: 100%;
+  height: 150%;
   position: relative;
 }
 
@@ -55,7 +55,7 @@ body::after {
   background-image: url("./assets/back.jpg");
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -10;
@@ -103,11 +103,10 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: -500px;
   background-color: rgb(26, 26, 26);
   opacity: 0.8;
-  z-index: -1;
 }
 
 
